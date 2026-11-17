@@ -170,6 +170,10 @@ Contributions are welcome! Please follow these steps:
 2. Create a feature branch.
 3. Submit a Pull Request.
 
+### Reproduction and limitations
+
+From the repository root, run `python3 -m pytest -q tests/` to check the no-leakage guards; run `python3 learning/train_traction_ai_v2.py` only with the documented input data to reproduce the reported fit. The 0.9999 held-out R² reflects temporally adjacent samples in three scripted recordings and does **not** demonstrate generalization to unseen terrains or robot hardware. No measured deployment latency is provided.
+
 12. 📜 License
 ---
 
